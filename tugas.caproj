@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>tugas</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2wensnafof68e</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1190</width>
+        <height>590</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">Off</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Firefox</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bg" sid="344477169968078">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\bg.png" />
+        </object-type>
+        <object-type name="grass" sid="603754801062175">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="862001362788850">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="210275132249956" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grass.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassLeft" sid="899446845891118">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="320034404335512">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326336447566350" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassLeft.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassMid" sid="749302021954357">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="827710836940018">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392331975384747" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassRight" sid="406207952645034">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="354752777849299">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="811151409712191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="830706521728286">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="heart" sid="772710128033925" type="number" />
+                <instance-variable name="key" sid="172707661792639" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="941713415468767">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="606163408002816">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="931443308226462">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="958206678668676">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243780145577109" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_stand.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_jump.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.878788" y="0.989362" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="11" loop="0" name="walking" pingpong="0" repeatcount="1" repeatto="0" sid="571821713965985" speed="25">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_walk\PNG\p2_walk11.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="dead" pingpong="0" repeatcount="1" repeatto="0" sid="174667457147625" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Player\p2_hurt.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="347051016520885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cloude2" sid="429298123679250">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\cloud1.png" />
+        </object-type>
+        <object-type name="cloude3" sid="100096834743102">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\cloud3.png" />
+        </object-type>
+        <object-type name="clude" sid="687361580508767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293300039374895" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\cloud2.png">
+                        <collision-poly>
+                            <point x="0.224806" y="0.408451" />
+                            <point x="0.496124" y="0" />
+                            <point x="0.782946" y="0.394366" />
+                            <point x="0.790698" y="0.492958" />
+                            <point x="0.945736" y="0.901408" />
+                            <point x="0.496124" y="1" />
+                            <point x="0.0542636" y="0.901408" />
+                            <point x="0.108527" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cactus" sid="214727549350511">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501105988734523" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\cactus.png">
+                        <collision-poly>
+                            <point x="0.385714" y="0.385714" />
+                            <point x="0.5" y="0.185714" />
+                            <point x="0.742857" y="0.257143" />
+                            <point x="0.771429" y="0.5" />
+                            <point x="0.614286" y="0.614286" />
+                            <point x="0.5" y="1" />
+                            <point x="0.242857" y="0.757143" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bush" sid="393580320559132">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746725901393238" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\bush.png">
+                        <collision-poly>
+                            <point x="0.814286" y="0.814286" />
+                            <point x="0.5" y="0.628571" />
+                            <point x="0.242857" y="0.757143" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="checkpoint" sid="235371535225734">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="nocheck" pingpong="0" repeatcount="1" repeatto="0" sid="483204834404816" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\buttonBlue.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="check" pingpong="0" repeatcount="1" repeatto="0" sid="410385659690634" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\buttonBlue_pressed.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="snail" sid="775871148924900">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="jalan" sid="672542170219725" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="911245766763431">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999430128696597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Enemies\snailWalk1.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.290323" />
+                            <point x="0.5" y="0.0322581" />
+                            <point x="0.888889" y="0.193548" />
+                            <point x="0.962963" y="0.483871" />
+                            <point x="0.981481" y="0.967742" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0740741" y="0.870968" />
+                            <point x="0.0740741" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.516129" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Enemies\snailWalk2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="dead" pingpong="0" repeatcount="1" repeatto="0" sid="449747143669491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="258982678567518">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="734164286498759">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433835648411409" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\HUD\hud_coins.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassCenter" sid="828465839974732">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282910413528873" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassCenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassHalf" sid="649439916149923">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="825186942216483">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446955096941431" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassHalf.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="0.985714" y="0.5" />
+                            <point x="0.571429" y="0.571429" />
+                            <point x="0.428571" y="0.571429" />
+                            <point x="0.0142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flyFly" sid="904143908314151">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="terbang" sid="718943103054457" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="998621689676052">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="869317909502629">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="470237368669311">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="288858768243648" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="dead" pingpong="0" repeatcount="1" repeatto="0" sid="953340330850005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="995104003587915">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="dinding" sid="752714053862917">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762773252579551" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="score" sid="812928428837226">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="score" sid="146448173671558" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="scorecoin" sid="105597823991272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648258483001730" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\HUD\hud_coins.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batas" sid="337441309086763">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309311849860330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\liquidWaterTop.png">
+                        <collision-poly>
+                            <point x="0.442857" y="0.442857" />
+                            <point x="0.5" y="0.414286" />
+                            <point x="0.628571" y="0.371429" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window" sid="602988834084223">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="395815629364174" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameover" sid="991224353531167">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243635096998795" speed="5">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="complete2" sid="349810770004664">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390557317301408" speed="0">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\complete.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart" sid="158978868127020">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263967173757208" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Button_75.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Button_77.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heart" sid="418310924730463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302414207475639" speed="5">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.511111" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\HUD\hud_heartFull.png">
+                        <collision-poly>
+                            <point x="0.0943396" y="0.111111" />
+                            <point x="0.490566" y="0.0666667" />
+                            <point x="0.90566" y="0.111111" />
+                            <point x="0.962264" y="0.488889" />
+                            <point x="0.773585" y="0.733333" />
+                            <point x="0.490566" y="1" />
+                            <point x="0.207547" y="0.755556" />
+                            <point x="0.0188679" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heart2" sid="136927386888378">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="nyawa" sid="970184260256112" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Touch" sid="417196281659060">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="TiledBackground" sid="133613995421460">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="hud_keyBlue" sid="597153568274456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634964703073812" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\keyBlue.png">
+                        <collision-poly>
+                            <point x="0.272727" y="0.3" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.886364" y="0.125" />
+                            <point x="0.886364" y="0.5" />
+                            <point x="0.613636" y="0.575" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.113636" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="keyHUD" sid="515992777961831">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231727461515782" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\HUD\hud_keyBlue_disabled.png">
+                        <collision-poly>
+                            <point x="0.272727" y="0.3" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.886364" y="0.125" />
+                            <point x="0.886364" y="0.5" />
+                            <point x="0.613636" y="0.575" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.113636" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\HUD\hud_keyBlue.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door_closedMid" sid="210765444195376">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="764020175956211" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\door_closedMid.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\door_openMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door_closedTop" sid="307477647095332">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428218888179176" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\door_closedTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.428571" />
+                            <point x="0.571429" y="0.428571" />
+                            <point x="0.828571" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.171429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="keyBlue" sid="275347290759437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472867890273739" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\keyBlue.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.214286" />
+                            <point x="0.5" y="0.385714" />
+                            <point x="0.614286" y="0.385714" />
+                            <point x="0.914286" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.528571" />
+                            <point x="0.285714" y="0.714286" />
+                            <point x="0.0714286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="key" sid="143130256859373">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="key" sid="664735571663681" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="grassHillLeft" sid="798764072917823">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="988656116233244">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752993252058475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassHillLeft.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.526786" y="0.476786" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grasscenter2" sid="838044642364774">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498105524185008" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassCenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grasshillleft2" sid="989752250710354">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="895917447830314">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745389284551213" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\grassHillLeft2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="semak2" sid="977440636753152">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174315093257299" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\bush.png">
+                        <collision-poly>
+                            <point x="0.814286" y="0.814286" />
+                            <point x="0.5" y="0.628571" />
+                            <point x="0.242857" y="0.757143" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="416865638334921">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404326887889820" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Items\plant.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.557143" />
+                            <point x="0.485714" y="0.514286" />
+                            <point x="0.471429" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.442857" y="0.557143" />
+                            <point x="0.428571" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="potongankayu2" sid="658769529349344">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="876448894130289">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="443840156212275">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296686696918874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0" y="0.642857" />
+                            <point x="0.5" y="0.642857" />
+                            <point x="0.957143" y="0.628571" />
+                            <point x="0.957143" y="0.957143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0428571" y="0.957143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kunci" sid="688154375509061">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="kunci" sid="881577272014532" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="lvl2" sid="454291084081973">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="262542229945281">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite2" sid="998628401645419">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="768180963481145">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="135711624780167">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218629642097212" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batas2" sid="504631956131612">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="197316670000601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\Tiles\liquidWaterTop.png">
+                        <collision-poly>
+                            <point x="0.442857" y="0.442857" />
+                            <point x="0.5" y="0.414286" />
+                            <point x="0.628571" y="0.371429" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="417137135524369">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\platformer-art-complete-pack-0\Base pack\bg.png" />
+        </object-type>
+        <object-type name="Screenshot" sid="726090518979319">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902381555478828" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\2. Foto\Screenshots\Screenshot (695).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="599130649572600">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\SpriteFont\SpriteFont_Vogue_ExtraBold_(50)_[0,0,0,0]_55x60.png" />
+        </object-type>
+        <object-type name="btnPlay" sid="664730854408143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196223881295463" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Play2.png">
+                        <collision-poly>
+                            <point x="0.037037" y="0.0824742" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.958333" y="0.0927835" />
+                            <point x="0.986111" y="0.494845" />
+                            <point x="0.949074" y="0.886598" />
+                            <point x="0.5" y="0.938144" />
+                            <point x="0.0462963" y="0.896907" />
+                            <point x="0.00925926" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.505155" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Play1.png">
+                        <collision-poly>
+                            <point x="0.0372093" y="0.0824742" />
+                            <point x="0.497674" y="0.0206186" />
+                            <point x="0.95814" y="0.0927835" />
+                            <point x="0.990698" y="0.494845" />
+                            <point x="0.953488" y="0.896907" />
+                            <point x="0.497674" y="0.948454" />
+                            <point x="0.0418605" y="0.907216" />
+                            <point x="0.00930233" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="924182392440126">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="btnMusic" sid="173920945419695">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="771299089859084" speed="0">
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button 2\Button_10.png">
+                        <collision-poly>
+                            <point x="0.0710383" y="0.0684211" />
+                            <point x="0.497268" y="0" />
+                            <point x="0.912568" y="0.0842105" />
+                            <point x="0.972678" y="0.5" />
+                            <point x="0.896175" y="0.9" />
+                            <point x="0.497268" y="0.952632" />
+                            <point x="0.0874317" y="0.915789" />
+                            <point x="0.00546448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button 2\Button_12.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0684211" />
+                            <point x="0.5" y="0" />
+                            <point x="0.912088" y="0.0842105" />
+                            <point x="0.978022" y="0.5" />
+                            <point x="0.895604" y="0.9" />
+                            <point x="0.5" y="0.952632" />
+                            <point x="0.0879121" y="0.915789" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnSound" sid="394194394655815">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790767433678254" speed="0">
+                    <frame duration="1" hotspotX="0.502732" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button 2\Button_14.png">
+                        <collision-poly>
+                            <point x="0.0710383" y="0.0684211" />
+                            <point x="0.497268" y="0" />
+                            <point x="0.912568" y="0.0842105" />
+                            <point x="0.972678" y="0.5" />
+                            <point x="0.896175" y="0.9" />
+                            <point x="0.497268" y="0.952632" />
+                            <point x="0.0874317" y="0.915789" />
+                            <point x="0.00546448" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button 2\Button_16.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.0684211" />
+                            <point x="0.5" y="0" />
+                            <point x="0.912088" y="0.0842105" />
+                            <point x="0.978022" y="0.5" />
+                            <point x="0.895604" y="0.9" />
+                            <point x="0.5" y="0.952632" />
+                            <point x="0.0879121" y="0.915789" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnHome" sid="667275334270917">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879128323344825" speed="0">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Button_51.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Button_53.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Home" sid="472647296451889">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746450370325400" speed="0">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Button_51.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\0. Perkuliahan UMS\semester 5\Praktikum Prmrograman Game &amp; Animasi\asset Construct2\Platformer\GUI\gui\button\Button_53.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>eGame.xml</event-sheet>
+        <event-sheet>eMenu.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="51" />
+        <global-instance type="Touch" uid="140">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="294">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="176" />
+    </global-instances>
+    <sounds-folder>
+        <file name="click.m4a" />
+        <file name="click.ogg" />
+        <file name="Collect Key.m4a" />
+        <file name="Collect Key.ogg" />
+        <file name="EnemyHit.m4a" />
+        <file name="EnemyHit.ogg" />
+        <file name="Hit.m4a" />
+        <file name="Hit.ogg" />
+        <file name="Jingle Lose.m4a" />
+        <file name="Jingle Lose.ogg" />
+        <file name="Jingle Win.m4a" />
+        <file name="Jingle Win.ogg" />
+        <file name="Collect Gem.m4a" />
+        <file name="Collect Gem.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="MattOglseby - 1.m4a" />
+        <file name="MattOglseby - 1.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
